@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftJsonThemeManager_Example' do
+  pod 'SwiftJsonThemeManager', :path => '../'
+
+  target 'SwiftJsonThemeManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
