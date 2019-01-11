@@ -1,0 +1,64 @@
+{
+    "definedStyle": {
+        "titleFont": ["custom", "medium"],
+        "titleColor": ["#74597F", 1],
+        "titleTextColor": ["#FED766", 1],
+        "textColor": ["#5FD7EF", 1],
+        "textStyleNormalLarge": ["boldItalic", "extraLarge"],
+        "textStyleNormalLargeColor": ["#584D3D", 1],
+        "primaryDarkColor": ["#91C6B4", 1],
+        "backgroundColor": ["#EF4423", 1]
+    },
+    "imageStyle": {
+        "touchIDImage": "TouchID",
+        "faceIDImage": "FaceID",
+        "horse": "horse"
+    },
+    "textStyles": {
+        "normal": "SourceSansPro-Regular",
+        "bold": "SourceSansPro-Semibold",
+        "italic": "SourceSansPro-It",
+        "boldItalic": "SourceSansPro-SemiboldIt",
+        "custom": "plasmatic"
+    },
+    "textSizes": {
+        "extraSmall": 13,
+        "small": 16,
+        "medium": 20,
+        "large": 25,
+        "extraLarge": 35
+    },
+    "label": {
+        "font": "titleFont",
+        "color": "titleColor"
+    },
+    "backgroundViewController": {
+        "normalView": "textStyleNormalLargeColor",
+        "customView": "textColor"
+    },
+    "button": {
+        "font": "titleColor",
+        "textColor": "textColor",
+        "image" : "horse",
+        "highlighted": "textColor",
+        "selected": "textColor",
+        "disabled": "textColor"
+    },
+  "pin": {
+      "keys": {
+          "border": "accentDark",
+          "number": {
+              "regular": {
+                  "background": "clearColor",
+                  "textColor": "textColor",
+                  "font": "textStyleNormalMedium"
+              },
+              "highlighted": {
+                  "background": "accentDark",
+                  "textColor": "textColor",
+                  "font": "textStyleNormalLarge"
+              }
+          }
+      }
+  }
+}

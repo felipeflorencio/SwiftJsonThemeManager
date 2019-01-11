@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>Template for Json Theme Swift Extensions.</string>
+	<key>Summary</key>
+	<string>Easy create the extensions for your theme and just make some adjusts</string>
+	<key>SortOrder</key>
+	<string>30</string>
+	<key>DefaultCompletionName</key>
+	<string>MyExtensionType</string>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Extension Name:</string>
+			<key>Description</key>
+			<string>The name of the class to create</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>cocoaSubclass</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Inherit From:</string>
+			<key>Description</key>
+			<string>What class to subclass in the new file</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>UIView</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>themeType</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Enum type name:</string>
+			<key>Description</key>
+			<string>The enum type name that will have all your types</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>JSONTheme</string>
+		</dict>
+	</array>
+</dict>
+</plist>

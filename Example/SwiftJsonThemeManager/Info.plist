@@ -35,5 +35,13 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SourceSansPro-Regular.otf</string>
+		<string>SourceSansPro-Semibold.otf</string>
+		<string>SourceSansPro-It.otf</string>
+		<string>SourceSansPro-SemiboldIt.otf</string>
+		<string>plasmati.ttf</string>
+	</array>
 </dict>
 </plist>

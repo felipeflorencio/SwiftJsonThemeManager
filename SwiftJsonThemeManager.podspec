@@ -8,35 +8,25 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftJsonThemeManager'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SwiftJsonThemeManager.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.1'
+  s.summary          = 'SwiftJsonThemeManager it is a helper library for you apply theme like colours, font, and more, in a very easy way.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Easy Swift Theme Manager based on JSON file, easy and clean to understand and apply theme to your project, have a project that customize, color, font, size, you should use theme manager in order to have one central point and done, need to refresh the view without close the view? This is your tool.
                        DESC
 
-  s.homepage         = 'https://github.com/Felipe Garcia/SwiftJsonThemeManager'
+  s.homepage         = 'https://github.com/felipeflorencio/SwiftJsonThemeManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Felipe Garcia' => 'felipe.garcia@nl.abnamro.com' }
-  s.source           = { :git => 'https://github.com/Felipe Garcia/SwiftJsonThemeManager.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.license          = { :type => 'GNU', :file => 'LICENSE' }
+  s.author           = { 'Felipe Florencio Garcia' => 'felipeflorencio@me.com' }
+  s.source           = { :git => 'https://github.com/felipeflorencio/SwiftJsonThemeManager.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/dr_nerd'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '4.2'
+
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
   s.source_files = 'SwiftJsonThemeManager/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SwiftJsonThemeManager' => ['SwiftJsonThemeManager/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+ 
 end

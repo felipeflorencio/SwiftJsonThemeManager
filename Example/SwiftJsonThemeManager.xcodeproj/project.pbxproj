@@ -15,6 +15,18 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8CD5A0A221E8C326009466C4 /* AssociatedIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5A09421E8C326009466C4 /* AssociatedIdentifiers.swift */; };
+		8CD5A0A321E8C326009466C4 /* UIView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5A09521E8C326009466C4 /* UIView+Theme.swift */; };
+		8CD5A0A421E8C326009466C4 /* CustomTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09721E8C326009466C4 /* CustomTheme.json */; };
+		8CD5A0A521E8C326009466C4 /* DefaultTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09821E8C326009466C4 /* DefaultTheme.json */; };
+		8CD5A0A621E8C326009466C4 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09A21E8C326009466C4 /* SourceSansPro-SemiboldIt.otf */; };
+		8CD5A0A721E8C326009466C4 /* SourceSansPro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09B21E8C326009466C4 /* SourceSansPro-It.otf */; };
+		8CD5A0A821E8C326009466C4 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09C21E8C326009466C4 /* SourceSansPro-Regular.otf */; };
+		8CD5A0A921E8C326009466C4 /* plasmati.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09D21E8C326009466C4 /* plasmati.ttf */; };
+		8CD5A0AA21E8C326009466C4 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09E21E8C326009466C4 /* SourceSansPro-Semibold.otf */; };
+		8CD5A0AB21E8C326009466C4 /* UIViewController+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5A09F21E8C326009466C4 /* UIViewController+Theme.swift */; };
+		8CD5A0AC21E8C326009466C4 /* UILabel+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5A0A021E8C326009466C4 /* UILabel+Theme.swift */; };
+		8CD5A0AD21E8C326009466C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5A0A121E8C326009466C4 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +41,8 @@
 
 /* Begin PBXFileReference section */
 		03F6B463ED03B2F24FAD11D8 /* Pods-SwiftJsonThemeManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftJsonThemeManager_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftJsonThemeManager_Example/Pods-SwiftJsonThemeManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2FB265369FD073C2F53ABBC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3855D6DB847F278DE3EAE196 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2FB265369FD073C2F53ABBC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3855D6DB847F278DE3EAE196 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3A1450C0322685E091F4E482 /* Pods-SwiftJsonThemeManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftJsonThemeManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftJsonThemeManager_Example/Pods-SwiftJsonThemeManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		464BA217FF2911D6B52BA90A /* Pods-SwiftJsonThemeManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftJsonThemeManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftJsonThemeManager_Tests/Pods-SwiftJsonThemeManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftJsonThemeManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftJsonThemeManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,8 +56,20 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7FD9A33784172B079374E04B /* Pods_SwiftJsonThemeManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftJsonThemeManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD5A09421E8C326009466C4 /* AssociatedIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociatedIdentifiers.swift; sourceTree = "<group>"; };
+		8CD5A09521E8C326009466C4 /* UIView+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Theme.swift"; sourceTree = "<group>"; };
+		8CD5A09721E8C326009466C4 /* CustomTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CustomTheme.json; sourceTree = "<group>"; };
+		8CD5A09821E8C326009466C4 /* DefaultTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultTheme.json; sourceTree = "<group>"; };
+		8CD5A09A21E8C326009466C4 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		8CD5A09B21E8C326009466C4 /* SourceSansPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-It.otf"; sourceTree = "<group>"; };
+		8CD5A09C21E8C326009466C4 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
+		8CD5A09D21E8C326009466C4 /* plasmati.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = plasmati.ttf; sourceTree = "<group>"; };
+		8CD5A09E21E8C326009466C4 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
+		8CD5A09F21E8C326009466C4 /* UIViewController+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Theme.swift"; sourceTree = "<group>"; };
+		8CD5A0A021E8C326009466C4 /* UILabel+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Theme.swift"; sourceTree = "<group>"; };
+		8CD5A0A121E8C326009466C4 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C049E877CE1FDD8BD3B99992 /* Pods_SwiftJsonThemeManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftJsonThemeManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E29822F527DFC941B5E4EC9F /* SwiftJsonThemeManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftJsonThemeManager.podspec; path = ../SwiftJsonThemeManager.podspec; sourceTree = "<group>"; };
+		E29822F527DFC941B5E4EC9F /* SwiftJsonThemeManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftJsonThemeManager.podspec; path = ../SwiftJsonThemeManager.podspec; sourceTree = "<group>"; };
 		F818F2A3016E6938A6573750 /* Pods-SwiftJsonThemeManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftJsonThemeManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-SwiftJsonThemeManager_Tests/Pods-SwiftJsonThemeManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +117,8 @@
 		607FACD21AFB9204008FA782 /* Example for SwiftJsonThemeManager */ = {
 			isa = PBXGroup;
 			children = (
+				8CD5A09321E8C326009466C4 /* Sample */,
+				8CD5A0A121E8C326009466C4 /* SecondViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -139,6 +165,40 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		8CD5A09321E8C326009466C4 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				8CD5A09621E8C326009466C4 /* Resources */,
+				8CD5A09421E8C326009466C4 /* AssociatedIdentifiers.swift */,
+				8CD5A09521E8C326009466C4 /* UIView+Theme.swift */,
+				8CD5A09F21E8C326009466C4 /* UIViewController+Theme.swift */,
+				8CD5A0A021E8C326009466C4 /* UILabel+Theme.swift */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		8CD5A09621E8C326009466C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CD5A09721E8C326009466C4 /* CustomTheme.json */,
+				8CD5A09821E8C326009466C4 /* DefaultTheme.json */,
+				8CD5A09921E8C326009466C4 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8CD5A09921E8C326009466C4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8CD5A09A21E8C326009466C4 /* SourceSansPro-SemiboldIt.otf */,
+				8CD5A09B21E8C326009466C4 /* SourceSansPro-It.otf */,
+				8CD5A09C21E8C326009466C4 /* SourceSansPro-Regular.otf */,
+				8CD5A09D21E8C326009466C4 /* plasmati.ttf */,
+				8CD5A09E21E8C326009466C4 /* SourceSansPro-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B2E1F6B87E6B18B55FE9CBD0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +207,6 @@
 				464BA217FF2911D6B52BA90A /* Pods-SwiftJsonThemeManager_Tests.debug.xcconfig */,
 				F818F2A3016E6938A6573750 /* Pods-SwiftJsonThemeManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +267,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -247,7 +306,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				8CD5A0A921E8C326009466C4 /* plasmati.ttf in Resources */,
+				8CD5A0A621E8C326009466C4 /* SourceSansPro-SemiboldIt.otf in Resources */,
+				8CD5A0A721E8C326009466C4 /* SourceSansPro-It.otf in Resources */,
+				8CD5A0AA21E8C326009466C4 /* SourceSansPro-Semibold.otf in Resources */,
+				8CD5A0A521E8C326009466C4 /* DefaultTheme.json in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				8CD5A0A421E8C326009466C4 /* CustomTheme.json in Resources */,
+				8CD5A0A821E8C326009466C4 /* SourceSansPro-Regular.otf in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +401,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD5A0A321E8C326009466C4 /* UIView+Theme.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				8CD5A0AC21E8C326009466C4 /* UILabel+Theme.swift in Sources */,
+				8CD5A0A221E8C326009466C4 /* AssociatedIdentifiers.swift in Sources */,
+				8CD5A0AD21E8C326009466C4 /* SecondViewController.swift in Sources */,
+				8CD5A0AB21E8C326009466C4 /* UIViewController+Theme.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,12 +461,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -423,7 +496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -443,12 +516,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -469,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

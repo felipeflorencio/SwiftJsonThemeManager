@@ -6,19 +6,35 @@
 //  Copyright (c) 2019 Felipe Garcia. All rights reserved.
 //
 
-import UIKit
+import SwiftJsonThemeManager
 
 class ViewController: UIViewController {
-
+    
+    // MARK: - Initialize Swift JSON Theme Manager 
+    let themeManager = ThemeManager.currentTheme
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        applyUIAppearance()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupUI()
     }
+ 
+    private func setupUI() {
+        self.view.applyUIAppearance()
+    }
+    
+    @IBAction func switchTheme(_ sender: Any) {
+        let defaultTheme = ThemeManager.currentThemeJson
+        
+        if defaultTheme == "DefaultTheme" {
+            ThemeManager.switchTheme(theme: "CustomTheme")
+            return
+        }
 
+        ThemeManager.switchTheme(theme: "DefaultTheme")
+    }
 }
 

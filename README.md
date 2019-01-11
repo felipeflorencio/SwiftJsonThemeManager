@@ -1,6 +1,6 @@
 # SwiftJsonThemeManager
 
-[![CI Status](https://img.shields.io/travis/Felipe Garcia/SwiftJsonThemeManager.svg?style=flat)](https://travis-ci.org/Felipe Garcia/SwiftJsonThemeManager)
+[![CI Status](https://img.shields.io/travis/felipeflorencio/SwiftJsonThemeManager.svg?style=flat)](https://travis-ci.org/felipeflorencio/SwiftJsonThemeManager)
 [![Version](https://img.shields.io/cocoapods/v/SwiftJsonThemeManager.svg?style=flat)](https://cocoapods.org/pods/SwiftJsonThemeManager)
 [![License](https://img.shields.io/cocoapods/l/SwiftJsonThemeManager.svg?style=flat)](https://cocoapods.org/pods/SwiftJsonThemeManager)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftJsonThemeManager.svg?style=flat)](https://cocoapods.org/pods/SwiftJsonThemeManager)
@@ -22,7 +22,7 @@ pod 'SwiftJsonThemeManager'
 
 ## Author
 
-Felipe Garcia, felipe.garcia@nl.abnamro.com
+Felipe Garcia, felipeflorencio@me.com
 
 ## License
 
