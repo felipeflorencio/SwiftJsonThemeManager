@@ -25,7 +25,7 @@ pod 'SwiftJsonThemeManager'
 
 It's a library that easy let you configure using a JSON structure and extensions, in order to work you need to use / create your own extensions.
 
-One of the advantages of use a JSON file it's to be able first to use on multiple plataform, as both will be able to load this JSON file, you backend can implement a generator in order to maybe your design create the configuration and you just download, you can integrate into your CI enviroment to download this file remotely, you can even create unit test to make sure the values did not changed!
+One of the advantages of use a JSON file it's to be able first to use on multiple platform, as both will be able to load this JSON file, you backend can implement a generator in order to maybe your design create the configuration and you just download, you can integrate into your CI environment to download this file remotely, you can even create unit test to make sure the values did not changed!
 
 This is how it works:
 1 - Install library and initiate;
@@ -275,6 +275,9 @@ extension UIViewController: ThemedView {
 This is just a model, how you can use, if you want you can check the sample project and you will easy see how can be used.
 
 One of the advantages of have this method called for all your view controller is the possibility to easy change your theme without need to reload the view itself, as for each view controller that you use the applyUIAppearance() we will register the view controller and when we want to update the view layout the only thing that we need is set a new theme, as soon we set the view that is on your screen will be automatically reloaded, look our sample project at our `SecondViewController`.
+
+
+6. If you created your project to have a pattern, like the sample project, you can easy set your view, view controller, label type from Storyboard because is `@IBInspectable`, or from code using the `associatedObject` variable like the example here.
 
 ## Author
 
