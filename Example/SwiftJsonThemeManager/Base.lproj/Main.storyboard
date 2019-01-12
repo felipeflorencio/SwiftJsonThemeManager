@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftJsonThemeManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftJsonThemeManager_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,16 +150,33 @@
         <!--Second View Controller-->
         <scene sceneID="aJ6-WF-JJ4">
             <objects>
-                <viewController id="01T-tx-TrL" customClass="SecondViewController" customModule="SwiftJsonThemeManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="01T-tx-TrL" customClass="SecondViewController" customModule="SwiftJsonThemeManager_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uke-rG-77R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CL-5F-ZDJ">
+                                <rect key="frame" x="67" y="494" width="241" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="uRD-pg-02J"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v5a-K1-8Zs" firstAttribute="trailing" secondItem="4CL-5F-ZDJ" secondAttribute="trailing" constant="67" id="7KX-vj-pfb"/>
+                            <constraint firstItem="4CL-5F-ZDJ" firstAttribute="leading" secondItem="v5a-K1-8Zs" secondAttribute="leading" constant="67" id="RtG-1i-Jht"/>
+                            <constraint firstItem="v5a-K1-8Zs" firstAttribute="bottom" secondItem="4CL-5F-ZDJ" secondAttribute="bottom" constant="45" id="rhQ-lm-nJD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="v5a-K1-8Zs"/>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="controllerName" value="customView"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="notThemedView" destination="4CL-5F-ZDJ" id="HUW-ah-Iyl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ksj-yz-J65" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

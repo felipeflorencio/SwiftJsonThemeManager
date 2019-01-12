@@ -39,6 +39,11 @@ extension ___VARIABLE_cocoaSubclass___: ThemedView {
   
     public func applyUIAppearance(with theme: Theme? = nil, avoid thisViews: [Any]? = nil) {
   
+        // If is the type UIViewController use this function to register to update
+        // any view controller that you use in your project, can be used to any kind
+        // of view too, but is recomended to use with UIViewController only
+        // ThemeManager.registerForThemeUpdates(self)
+        
         // Check if I should not try to apply template to this view
         if let list = thisViews {
             let isMyType = list.compactMap({ $0 as? ___VARIABLE_cocoaSubclass___ })

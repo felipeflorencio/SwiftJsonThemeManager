@@ -10,8 +10,20 @@ import SwiftJsonThemeManager
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var notThemedView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         applyUIAppearance()
+    }
+}
+
+extension SecondViewController: CustomTheme {
+    var customTheme: ThemedViewCustomTheme {
+        return { [weak self] theme -> Void in
+            
+            guard let currentTheme = theme, let `self` = self else { return }
+            
+            self.notThemedView.backgroundColor = currentTheme.getThemeColor(name: "textColor")
+        }
     }
 }

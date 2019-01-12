@@ -18,7 +18,7 @@ Easy Swift Theme Manager based on JSON file, easy and clean to understand and ap
   s.homepage         = 'https://github.com/felipeflorencio/SwiftJsonThemeManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'GNU', :file => 'LICENSE' }
-  s.author           = { 'Felipe Florencio Garcia' => 'felipeflorencio@me.com' }
+  s.author           = { 'Felipe F Garcia' => 'felipeflorencio@me.com' }
   s.source           = { :git => 'https://github.com/felipeflorencio/SwiftJsonThemeManager.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/dr_nerd'
 
@@ -28,5 +28,5 @@ Easy Swift Theme Manager based on JSON file, easy and clean to understand and ap
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
   s.source_files = 'SwiftJsonThemeManager/Classes/**/*'
- 
+
 end
