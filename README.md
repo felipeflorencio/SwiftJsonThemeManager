@@ -141,7 +141,7 @@ This is a example on how to create your basic JSON file.
   self.myLabel.textColor = themeManager.getThemeColor(name: "textColor")
 ```
 
-Or you can create the way that is suppose, that is using extension making use of color pattern to use inside your project. And for this I created a template for your Xcode, that you can easy create from Xcode panel using this, to install the template you can easy use the python script, this this command inside your terminal, you need to be in the same folder as the python file are:
+Or you can create the way that is suppose, that is using extension making use of color pattern to use inside your project. And for this I created a template for your Xcode, that you can easy create from Xcode panel using this, to install the template you can easy use the python script, type this command inside your terminal, you need to be in the same folder as the python file are:
 ```python
   python SetupThemeExtension.py
 ```
@@ -150,9 +150,10 @@ Or you can create the way that is suppose, that is using extension making use of
 
 <img src="https://raw.githubusercontent.com/felipeflorencio/SwiftJsonThemeManager/master/screenshots/1.png" width="500" title="Theme Extension Template">
 
-Here you need to set 3 variables
-1 - Extension Name
-2 - Inherit from, for example, if is your first file should be for UIViewController
+Here you need to set 3 variables:
+
+1 - Extension Name;
+2 - Inherit from, for example, if is your first file should be for UIViewController;
 3 - Enum type name, to be easier to manage, we set to create a Enum with the given name, for now put a name that will be used for your Enum type;
 
 <img src="https://raw.githubusercontent.com/felipeflorencio/SwiftJsonThemeManager/master/screenshots/2.png" width="500" title="Extension properties">
@@ -227,9 +228,8 @@ extension UIViewController: ThemedView {
   // trying to apply any theme configuration
     public func applyUIAppearance(with theme: Theme? = nil, avoid thisViews: [Any]? = nil) {
 
-        // If is the type UIViewController use this function to register to update
-        // any view controller that you use in your project, can be used to any kind
-        // of view too, but is recomended to use with UIViewController only
+        // If is the type UIViewController use this function to register to update any view
+        // controller that you use in your project, it's only for UIViewController type
         ThemeManager.registerForThemeUpdates(self)
 
         // Check if I should not try to apply template to this view
@@ -259,7 +259,7 @@ extension UIViewController: ThemedView {
 
         // You can use this in order to apply theme to all subviews, if you create a extension
         // to your UIView for example, this will loop inside all your subview, and can apply
-        // a custom theme color configuration that you set, look at our sample project to
+        // a custom theme color configuration that you set, look at our sample project to learn
         // If your type is UIView use this in order to apply to all subviews
         // self.subviews.forEach {
         //    $0.applyUIAppearance(with: theme, avoid: thisViews)
@@ -277,7 +277,7 @@ This is just a model, how you can use, if you want you can check the sample proj
 One of the advantages of have this method called for all your view controller is the possibility to easy change your theme without need to reload the view itself, as for each view controller that you use the applyUIAppearance() we will register the view controller and when we want to update the view layout the only thing that we need is set a new theme, as soon we set the view that is on your screen will be automatically reloaded, look our sample project at our `SecondViewController`.
 
 
-6. If you created your project to have a pattern, like the sample project, you can easy set your view, view controller, label type from Storyboard because is `@IBInspectable`, or from code using the `associatedObject` variable like the example here.
+6. If you created your project to have a pattern, like the sample project, you can easy set your view, view controller, label type from Storyboard because is `@IBInspectable`, or from code using the `associatedObject` variable direct like the example here.
 
 ## Author
 
