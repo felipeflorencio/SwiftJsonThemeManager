@@ -1,3 +1,9 @@
+![SwiftJsonThemeManager](https://raw.githubusercontent.com/felipeflorencio/SwiftJsonThemeManager/master/screenshots/logo_swift_json_theme_manager.png)
+
+<p align="center">
+<a href="#usage">Usage</a> -
+<a href="#Template">Xcode Template</a>
+</p>
 # SwiftJsonThemeManager
 
 [![CI Status](https://img.shields.io/travis/felipeflorencio/SwiftJsonThemeManager.svg?style=flat)](https://travis-ci.org/felipeflorencio/SwiftJsonThemeManager)
@@ -146,6 +152,8 @@ Or you can create the way that is suppose, that is using extension making use of
   python SetupThemeExtension.py
 ```
 
+## Template
+### Xcode Template
 5. If success you just need open Xcode -> New -> File... -> Go to bottom and you will see 'Theme Extension'.
 
 <img src="https://raw.githubusercontent.com/felipeflorencio/SwiftJsonThemeManager/master/screenshots/1.png" width="500" title="Theme Extension Template">
