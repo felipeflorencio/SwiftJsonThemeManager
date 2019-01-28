@@ -9,14 +9,12 @@
 
 import SwiftJsonThemeManager
 
-public var customUILabelThemeId: UInt8 = 2
-
 public enum LabelTheme: String {
     // Add your types here
     case sourceSansProSemiboldIt
     case sourceSansProIt
     case sourceSansSemibold
-    case plamati
+    case plamatic
     case none
 }
 
@@ -26,12 +24,12 @@ extension UILabel {
 // Tip: Create a file that have all the key's so you have sure neve have duplicated
     @IBInspectable var identifierUILabelThemeName: String {
         get {
-            return associatedObject(base: self, key: &customUILabelThemeId, initialiser: { () -> NSString in
+            return associatedObject(base: self, key: &labelId, initialiser: { () -> NSString in
                 return ""
             }) as String
         }
         set {
-            associateObject(base: self, key: &customUILabelThemeId, value: newValue as NSString)
+            associateObject(base: self, key: &labelId, value: newValue as NSString)
         }
     }
 
@@ -48,27 +46,18 @@ extension UILabel {
 extension UILabel {
   
     public override func applyUIAppearance(with theme: Theme? = nil, avoid thisViews: [Any]? = nil) {
-  
-        // Check if I should not try to apply template to this view
-        // Or to avoid when UIView try to apply theme to subview
-        if let list = thisViews {
-            let isMyType = list.compactMap({ $0 as? UILabel })
-            if isMyType.first(where: { view in return view.isEqual(self) }) != nil {
-                return
-            }
-        }
         
         let theme = theme ?? ThemeManager.currentTheme
 
         switch viewLabelTheme {
-            case .sourceSansProSemiboldIt:
-                font = theme.getThemedFont(name: "titleFont")
-                textColor = theme.getThemeColor(name: "titleTextColor")
+            case .sourceSansProSemiboldIt: break
             case .sourceSansProIt:
-                font = theme.getThemedFont(name: "textStyleNormalLarge")
-                textColor = theme.getThemeColor(name: "textStyleNormalLargeColor")
+                font = theme.getThemedFont(name: "label.commonLabelFont")
+                textColor = theme.getThemeColor(name: "label.commonLabelColor")
             case .sourceSansSemibold: break
-            case .plamati: break
+            case .plamatic:
+                font = theme.getThemedFont(name: "label.customLabelFont")
+                textColor = theme.getThemeColor(name: "label.customLabelColor")
 	        default: break
         }
         

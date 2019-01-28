@@ -1,5 +1,5 @@
 PODS:
-  - SwiftJsonThemeManager (1.0)
+  - SwiftJsonThemeManager (0.1)
 
 DEPENDENCIES:
   - SwiftJsonThemeManager (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftJsonThemeManager: 0c1e8a91dc4c552bb0d53952ad42eb923e6ffb46
+  SwiftJsonThemeManager: 3dabd9fa61a4a1df81b8e0aeb2a0a4bee30996b0
 
 PODFILE CHECKSUM: 1f5ce7ad1f7bd805b8f8ef09ea98bb8d9eb702f5
 

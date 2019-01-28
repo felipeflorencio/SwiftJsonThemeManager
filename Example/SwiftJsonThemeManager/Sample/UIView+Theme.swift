@@ -39,27 +39,24 @@ extension UIView {
 
 extension UIView: ThemedView {
   
+    open override func awakeFromNib() {
+        super.awakeFromNib()
+        applyUIAppearance()
+    }
+    
     public func applyUIAppearance(with theme: Theme? = nil, avoid thisViews: [Any]? = nil) {
-  
-        // Check if I should not try to apply template to this view
-        if let list = thisViews {
-            let isMyType = list.compactMap({ $0 as? UIView })
-            if isMyType.first(where: { view in return view.isEqual(self) }) != nil {
-                return
-            }
-        }
+        
+        guard !(self is UICollectionView) else { return }
         
         let theme = theme ?? ThemeManager.currentTheme
 
         switch viewType {
         case .simpleView:
-            backgroundColor = theme.getThemeColor(name: "button.textColor")
+            backgroundColor = theme.getThemeColor(name: "view.simpleViewColor")
         case .simpleViewColored:
-            backgroundColor = theme.getThemeColor(name: "titleColor")
-        case .notThemed:
-            return
-        default:
-            break
+            backgroundColor = theme.getThemeColor(name: "view.simplesViewColoredColor")
+        case .notThemed: return
+        default: break
         }
 
         self.subviews.forEach {

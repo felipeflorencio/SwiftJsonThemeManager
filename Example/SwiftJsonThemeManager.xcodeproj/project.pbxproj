@@ -10,14 +10,14 @@
 		09ACE1901259DA54F98A9164 /* Pods_SwiftJsonThemeManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C049E877CE1FDD8BD3B99992 /* Pods_SwiftJsonThemeManager_Tests.framework */; };
 		1D5EE16E2D88375B96FF969A /* Pods_SwiftJsonThemeManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD9A33784172B079374E04B /* Pods_SwiftJsonThemeManager_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* MainViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8CD5A0A221E8C326009466C4 /* AssociatedIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5A09421E8C326009466C4 /* AssociatedIdentifiers.swift */; };
 		8CD5A0A321E8C326009466C4 /* UIView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5A09521E8C326009466C4 /* UIView+Theme.swift */; };
-		8CD5A0A421E8C326009466C4 /* CustomTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09721E8C326009466C4 /* CustomTheme.json */; };
+		8CD5A0A421E8C326009466C4 /* RedTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09721E8C326009466C4 /* RedTheme.json */; };
 		8CD5A0A521E8C326009466C4 /* DefaultTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09821E8C326009466C4 /* DefaultTheme.json */; };
 		8CD5A0A621E8C326009466C4 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09A21E8C326009466C4 /* SourceSansPro-SemiboldIt.otf */; };
 		8CD5A0A721E8C326009466C4 /* SourceSansPro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09B21E8C326009466C4 /* SourceSansPro-It.otf */; };
@@ -26,7 +26,12 @@
 		8CD5A0AA21E8C326009466C4 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD5A09E21E8C326009466C4 /* SourceSansPro-Semibold.otf */; };
 		8CD5A0AB21E8C326009466C4 /* UIViewController+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5A09F21E8C326009466C4 /* UIViewController+Theme.swift */; };
 		8CD5A0AC21E8C326009466C4 /* UILabel+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5A0A021E8C326009466C4 /* UILabel+Theme.swift */; };
-		8CD5A0AD21E8C326009466C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5A0A121E8C326009466C4 /* SecondViewController.swift */; };
+		8CF9264121FA306D00D38EB4 /* ThemeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF9264021FA306D00D38EB4 /* ThemeListViewController.swift */; };
+		8CF9264321FB1D8C00D38EB4 /* UISwitch+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF9264221FB1D8C00D38EB4 /* UISwitch+Extension.swift */; };
+		8CF9264521FB213000D38EB4 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF9264421FB213000D38EB4 /* UIButton+Extension.swift */; };
+		8CF9264721FB23D000D38EB4 /* NightTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CF9264621FB23D000D38EB4 /* NightTheme.json */; };
+		8CF9264A21FB460100D38EB4 /* BlueTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CF9264821FB460100D38EB4 /* BlueTheme.json */; };
+		8CF9264B21FB460100D38EB4 /* YellowTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CF9264921FB460100D38EB4 /* YellowTheme.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +53,7 @@
 		607FACD01AFB9204008FA782 /* SwiftJsonThemeManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftJsonThemeManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -58,7 +63,7 @@
 		7FD9A33784172B079374E04B /* Pods_SwiftJsonThemeManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftJsonThemeManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD5A09421E8C326009466C4 /* AssociatedIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssociatedIdentifiers.swift; sourceTree = "<group>"; };
 		8CD5A09521E8C326009466C4 /* UIView+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Theme.swift"; sourceTree = "<group>"; };
-		8CD5A09721E8C326009466C4 /* CustomTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CustomTheme.json; sourceTree = "<group>"; };
+		8CD5A09721E8C326009466C4 /* RedTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RedTheme.json; sourceTree = "<group>"; };
 		8CD5A09821E8C326009466C4 /* DefaultTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultTheme.json; sourceTree = "<group>"; };
 		8CD5A09A21E8C326009466C4 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
 		8CD5A09B21E8C326009466C4 /* SourceSansPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-It.otf"; sourceTree = "<group>"; };
@@ -67,7 +72,12 @@
 		8CD5A09E21E8C326009466C4 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
 		8CD5A09F21E8C326009466C4 /* UIViewController+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Theme.swift"; sourceTree = "<group>"; };
 		8CD5A0A021E8C326009466C4 /* UILabel+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Theme.swift"; sourceTree = "<group>"; };
-		8CD5A0A121E8C326009466C4 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8CF9264021FA306D00D38EB4 /* ThemeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeListViewController.swift; sourceTree = "<group>"; };
+		8CF9264221FB1D8C00D38EB4 /* UISwitch+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Extension.swift"; sourceTree = "<group>"; };
+		8CF9264421FB213000D38EB4 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		8CF9264621FB23D000D38EB4 /* NightTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NightTheme.json; sourceTree = "<group>"; };
+		8CF9264821FB460100D38EB4 /* BlueTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlueTheme.json; sourceTree = "<group>"; };
+		8CF9264921FB460100D38EB4 /* YellowTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = YellowTheme.json; sourceTree = "<group>"; };
 		C049E877CE1FDD8BD3B99992 /* Pods_SwiftJsonThemeManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftJsonThemeManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29822F527DFC941B5E4EC9F /* SwiftJsonThemeManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftJsonThemeManager.podspec; path = ../SwiftJsonThemeManager.podspec; sourceTree = "<group>"; };
 		F818F2A3016E6938A6573750 /* Pods-SwiftJsonThemeManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftJsonThemeManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-SwiftJsonThemeManager_Tests/Pods-SwiftJsonThemeManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,9 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				8CD5A09321E8C326009466C4 /* Sample */,
-				8CD5A0A121E8C326009466C4 /* SecondViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* MainViewController.swift */,
+				8CF9264021FA306D00D38EB4 /* ThemeListViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -173,6 +183,8 @@
 				8CD5A09521E8C326009466C4 /* UIView+Theme.swift */,
 				8CD5A09F21E8C326009466C4 /* UIViewController+Theme.swift */,
 				8CD5A0A021E8C326009466C4 /* UILabel+Theme.swift */,
+				8CF9264221FB1D8C00D38EB4 /* UISwitch+Extension.swift */,
+				8CF9264421FB213000D38EB4 /* UIButton+Extension.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -180,7 +192,10 @@
 		8CD5A09621E8C326009466C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8CD5A09721E8C326009466C4 /* CustomTheme.json */,
+				8CF9264821FB460100D38EB4 /* BlueTheme.json */,
+				8CF9264921FB460100D38EB4 /* YellowTheme.json */,
+				8CF9264621FB23D000D38EB4 /* NightTheme.json */,
+				8CD5A09721E8C326009466C4 /* RedTheme.json */,
 				8CD5A09821E8C326009466C4 /* DefaultTheme.json */,
 				8CD5A09921E8C326009466C4 /* Fonts */,
 			);
@@ -306,15 +321,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				8CF9264A21FB460100D38EB4 /* BlueTheme.json in Resources */,
 				8CD5A0A921E8C326009466C4 /* plasmati.ttf in Resources */,
 				8CD5A0A621E8C326009466C4 /* SourceSansPro-SemiboldIt.otf in Resources */,
 				8CD5A0A721E8C326009466C4 /* SourceSansPro-It.otf in Resources */,
 				8CD5A0AA21E8C326009466C4 /* SourceSansPro-Semibold.otf in Resources */,
 				8CD5A0A521E8C326009466C4 /* DefaultTheme.json in Resources */,
+				8CF9264721FB23D000D38EB4 /* NightTheme.json in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				8CD5A0A421E8C326009466C4 /* CustomTheme.json in Resources */,
+				8CD5A0A421E8C326009466C4 /* RedTheme.json in Resources */,
 				8CD5A0A821E8C326009466C4 /* SourceSansPro-Regular.otf in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				8CF9264B21FB460100D38EB4 /* YellowTheme.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,11 +420,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CD5A0A321E8C326009466C4 /* UIView+Theme.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				8CF9264521FB213000D38EB4 /* UIButton+Extension.swift in Sources */,
+				8CF9264321FB1D8C00D38EB4 /* UISwitch+Extension.swift in Sources */,
+				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
 				8CD5A0AC21E8C326009466C4 /* UILabel+Theme.swift in Sources */,
 				8CD5A0A221E8C326009466C4 /* AssociatedIdentifiers.swift in Sources */,
-				8CD5A0AD21E8C326009466C4 /* SecondViewController.swift in Sources */,
 				8CD5A0AB21E8C326009466C4 /* UIViewController+Theme.swift in Sources */,
+				8CF9264121FA306D00D38EB4 /* ThemeListViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

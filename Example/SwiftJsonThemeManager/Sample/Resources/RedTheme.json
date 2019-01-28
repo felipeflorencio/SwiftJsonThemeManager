@@ -1,0 +1,69 @@
+{
+    "definedStyle": {
+        "buttonYellowColor": ["#FFD10B", 1],
+        "buttonRedColor": ["#D70000", 1],
+        "buttonBlueColor": ["#007ED7", 1],
+        "normalFont": ["bold", "mediumSize"],
+        "normalColor": ["#FFD800", 1],
+        "normalButtonColor": ["#9C0707", 1],
+        "centerFont": ["bold", "normalSize"],
+        "centerColor": ["#ABB1D9", 1],
+        "centerButtonColor": ["#E20300", 1],
+        "customThemeFont": ["custom", "normalSize"],
+        "customThemeColor": ["#ABB1D9", 1],
+        "customButtonThemeColor": ["#ABB1D9", 1],
+        "customFont": ["custom", "mediumSize"],
+        "customColor": ["#980000", 1],
+        "switchColorOn": ["#131204", 1],
+        "switchColorOff": ["#FFEE74", 1],
+        "defaultBackgroundColor": ["#E20100", 1],
+        "themeBackgroundColor": ["#CA0940", 1],
+        "simpleViewColor": ["#EF6262", 1],
+        "simplesViewColoredColor": ["#E28787", 1]
+    },
+    "imageStyle": {
+        "touchIDImage": "TouchID",
+        "faceIDImage": "FaceID",
+        "horse": "horse"
+    },
+    "textStyles": {
+        "normal": "SourceSansPro-Regular",
+        "bold": "SourceSansPro-Semibold",
+        "italic": "SourceSansPro-It",
+        "boldItalic": "SourceSansPro-SemiboldIt",
+        "custom": "plasmatic"
+    },
+    "textSizes": {
+        "extraSmallSize": 13,
+        "smallSize": 14,
+        "normalSize": 16,
+        "mediumSize": 20,
+        "largeSize": 25
+    },
+    "backgroundViewController": {
+        "defaultView": "defaultBackgroundColor",
+        "themeListViewController": "themeBackgroundColor"
+    },
+    "button": {
+        "commonButtonFont": "normalFont",
+        "commonButtonColor": "normalButtonColor",
+        "centerButtonFont": "centerFont",
+        "centerButtonColor": "centerButtonColor",
+        "themeSelectButtonFont": "customThemeFont",
+        "themeSelectButtonColor": "customButtonThemeColor"
+    },
+    "label": {
+        "commonLabelFont": "normalFont",
+        "commonLabelColor": "normalColor",
+        "customLabelFont": "customFont",
+        "customLabelColor": "customColor"
+    },
+    "switch": {
+        "colorOn": "switchColorOn",
+        "colorOff": "switchColorOff"
+    },
+    "view": {
+        "simpleViewColor": "simpleViewColor",
+        "simplesViewColoredColor": "simplesViewColoredColor"
+    }
+}

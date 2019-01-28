@@ -40,33 +40,24 @@ extension UIViewController {
 
 extension UIViewController: ThemedView {
     
+    open override func awakeFromNib() {
+        super.awakeFromNib()
+        applyUIAppearance()
+    }
+    
     public func applyUIAppearance(with theme: Theme? = nil, avoid thisViews: [Any]? = nil) {
         
 		ThemeManager.registerForThemeUpdates(self)
-        
-        // Check if I should not try to apply template to this view
-        if let list = thisViews {
-            let isMyType = list.compactMap({ $0 as? UIViewController })
-            if isMyType.first(where: { view in return view.isEqual(self) }) != nil {
-                return
-            }
-        }
         
         let theme = theme ?? ThemeManager.currentTheme
         
         switch viewControllerType {
         case .simpleView:
-            self.view.backgroundColor = theme.getThemeColor(name: "backgroundViewController.normalView")
+            self.view.backgroundColor = theme.getThemeColor(name: "backgroundViewController.defaultView")
         case .customView:
-            self.view.backgroundColor = theme.getThemeColor(name: "backgroundViewController.customView")
-        case .notThemed:
-            return
-        default:
-            break
-        }
-        
-        self.view.subviews.forEach {
-            $0.applyUIAppearance(with: theme, avoid: thisViews)
+            self.view.backgroundColor = theme.getThemeColor(name: "backgroundViewController.themeListViewController")
+        case .notThemed: return
+        default: break
         }
         
         // When you want to have a custom implementation only to that class use this

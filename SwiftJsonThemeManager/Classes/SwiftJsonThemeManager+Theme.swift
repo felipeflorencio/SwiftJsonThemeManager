@@ -15,6 +15,8 @@ import UIKit
 	func getThemeColor(name: String) -> UIColor
 
 	func getThemeImage(name: String) -> UIImage
+    
+    func getThemeData(name: String) -> String
 }
 
 extension SwiftJsonThemeManager: Theme {
@@ -34,4 +36,8 @@ extension SwiftJsonThemeManager: Theme {
 	public func getThemeImage(name: String) -> UIImage {
 		return themedImage(name)
 	}
+    
+    public func getThemeData(name: String) -> String {
+        return themeData(name)
+    }
 }

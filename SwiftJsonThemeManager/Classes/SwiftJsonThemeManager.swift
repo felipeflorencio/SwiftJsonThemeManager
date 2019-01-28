@@ -128,4 +128,13 @@ class SwiftJsonThemeManager {
         
         return image
     }
+    
+    func themeData(_ dataPath: String) -> String {
+        
+        guard let data = themeData[string: dataPath] else {
+            preconditionFailure("Invalid data path")
+        }
+        
+        return data
+    }
 }
